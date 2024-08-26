@@ -1,15 +1,15 @@
 import React from 'react';
 import CounterApp from './CounterApp';
-import FirstApp from './FirstApp';
+// import FirstApp from './FirstApp';
 
 const App = () => {
   return (
     <>
-      <FirstApp
+      {/* <FirstApp
         title={'FirstApp'}
         subTitle={'CounterApp'}
         name={'Mariangel Acosta'}
-      />
+      /> */}
       <CounterApp value={100} />
     </>
   );
