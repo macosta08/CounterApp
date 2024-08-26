@@ -25,7 +25,7 @@ https://counter-app-phi-one.vercel.app/
 
 Aquí tienes el archivo `README.md` con la información proporcionada:
 
-````markdown
+
 # Counter App
 
 ## Clonar el Repositorio
@@ -50,67 +50,9 @@ bun install
 - **`bun test`**: Ejecuta las pruebas con Jest.
 - **`bun test:single`**: Ejecuta las pruebas de un solo archivo especificado.
 
-## Despliegue
-
-Para desplegar la aplicación, sigue estos pasos:
-
-1. **Construye la aplicación**:
-
-   ```bash
-   bun build
-   ```
-
-2. Los archivos de salida se encontrarán en la carpeta `dist`. Puedes servir estos archivos usando cualquier servidor estático.
-
-## Expansión de la Configuración de ESLint
-
-Si estás desarrollando una aplicación de producción, recomendamos actualizar la configuración para habilitar reglas de linting con conocimiento de tipos:
-
-1. Configura la propiedad `parserOptions` en el nivel superior de esta manera:
-
-   ```javascript
-   export default tseslint.config({
-     languageOptions: {
-       // otras opciones...
-       parserOptions: {
-         project: ['./tsconfig.node.json', './tsconfig.app.json'],
-         tsconfigRootDir: import.meta.dirname,
-       },
-     },
-   });
-   ```
-
-2. Reemplaza `tseslint.configs.recommended` por `tseslint.configs.recommendedTypeChecked` o `tseslint.configs.strictTypeChecked`.
-
-3. Opcionalmente, añade `...tseslint.configs.stylisticTypeChecked`.
-
-4. Instala `eslint-plugin-react` y actualiza la configuración:
-
-   ```javascript
-   // eslint.config.js
-   import react from 'eslint-plugin-react';
-
-   export default tseslint.config({
-     // Configura la versión de React
-     settings: { react: { version: '18.3' } },
-     plugins: {
-       // Añade el plugin de React
-       react,
-     },
-     rules: {
-       // otras reglas...
-       // Habilita sus reglas recomendadas
-       ...react.configs.recommended.rules,
-       ...react.configs['jsx-runtime'].rules,
-     },
-   });
-   ```
 
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio que te gustaría hacer.
 
-```
 
-```
-````
