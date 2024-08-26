@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsc --noEmit && vite",
-    "build": "tsc --noEmit && bun build src/main.tsx --outdir=dist",
+    "build": "vite build",
+    "build2": "tsc --noEmit && bun build src/main.tsx --outdir=dist",
     "lint": "eslint --fix .",
     "prettier": "prettier --write .",
     "test": "jest --watchAll",
