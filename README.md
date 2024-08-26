@@ -2,6 +2,13 @@
 
 Este proyecto es una aplicación de contador simple desarrollada con React, TypeScript y Vite. La aplicación permite incrementar y decrementar un contador, y está configurada con ESLint y Prettier para mantener un código limpio y consistente.
 
+## Lint despliegue en Vercel
+
+```bash
+https://counter-app-phi-one.vercel.app/
+
+```
+
 ## Tecnologías Utilizadas
 
 - **React**: Biblioteca de JavaScript para construir interfaces de usuario.
@@ -27,7 +34,6 @@ Aquí tienes el archivo `README.md` con la información proporcionada:
 git clone https://github.com/tu-usuario/counter-app.git
 cd counter-app
 ```
-````
 
 ## Instalar las Dependencias
 
@@ -107,3 +113,4 @@ Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request p
 ```
 
 ```
+````
